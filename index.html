@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empréstimo Consignado - JMCREDFINANCEIRA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <!-- Adição da logomarca -->
+        <img src="fotos/soluções_e_serviços_de_crédito-removebg-preview.png" alt="Logomarca CredFácil" class="logo">
+    
+
+       
+        <p>Empréstimos Consignados com as melhores taxas do mercado</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#vantagens">Vantagens</a>
+        <a href="#simular">Simulação</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="banner">
+        <h2>Conquiste seus sonhos com o Consignado!</h2>
+        <p>Crédito rápido, fácil e com parcelas que cabem no seu bolso.</p>
+        <button onclick="simularCredito()">Simule agora</button>
+    </div>
+
+    <section id="sobre">
+        <h2>O que é Empréstimo Consignado?</h2>
+        <p>O empréstimo consignado é uma modalidade de crédito com juros reduzidos, onde as parcelas são descontadas diretamente da folha de pagamento ou benefício do INSS. É uma opção prática e segura para quem busca crédito com condições especiais.</p>
+    </section>
+
+    <section id="vantagens">
+        <h2>Vantagens do Consignado</h2>
+        <div class="benefits">
+            <div class="benefit">
+                <h3>✔ Juros Baixos</h3>
+                <p>As menores taxas do mercado para aposentados, pensionistas e servidores públicos.</p>
+            </div>
+            <div class="benefit">
+                <h3>⚡ Aprovação Rápida</h3>
+                <p>Crédito liberado em poucas horas, sem burocracia.</p>
+            </div>
+            <div class="benefit">
+                <h3>💰 Parcelas Fixas</h3>
+                <p>Você sabe exatamente quanto vai pagar até o fim do contrato.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="simular">
+        <h2>Simule seu Empréstimo</h2>
+        <form id="form-simulacao">
+            <input type="text" id="nome" placeholder="Seu nome" required>
+            <input type="number" id="valor" placeholder="Valor desejado (R$)" required>
+            <input type="number" id="parcelas" placeholder="Quantidade de parcelas" required>
+            <button type="button" onclick="calcularSimulacao()">Simular</button>
+            <p id="resultado" style="font-weight:bold; text-align:center;"></p>
+        </form>
+    </section>
+
+   
+
+    <footer>
+        <p>&copy; JMCRED FINANCEIRA - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
